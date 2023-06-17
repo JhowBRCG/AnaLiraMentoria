@@ -1,0 +1,50 @@
+@include tablet-responsive {
+  .hero {
+    &__container {
+      height: 60vh;
+
+      .hero__content {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include phone-responsive {
+  .hero {
+    &__container {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+
+      .hero__content {
+        order: 1;
+        text-align: center;
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .about {
+    &__container {
+      padding: 5rem 2rem;
+      .content__about {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

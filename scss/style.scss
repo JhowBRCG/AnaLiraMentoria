@@ -1,0 +1,23 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "hero";
+@import "about";
+@import "responsive";
+
+.container {
+  width: $container-lg;
+  margin: 0 auto;
+}
+
+@include tablet-responsive {
+  .container {
+    width: $container-md;
+  }
+}
+
+@include phone-responsive {
+  section {
+    margin-top: 0;
+  }
+}

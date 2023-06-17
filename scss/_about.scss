@@ -1,0 +1,40 @@
+.about {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: $secondary-color;
+    padding: 5rem;
+    gap: 5rem;
+    border-radius: 2rem;
+
+    .content__about {
+      padding-top: 2rem;
+
+      h2 {
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin-bottom: 1.8rem;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 2rem;
+        color: $black-color;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        color: $black-color-opacity;
+      }
+
+      p + p {
+        margin-top: 1.8rem;
+      }
+    }
+  }
+}

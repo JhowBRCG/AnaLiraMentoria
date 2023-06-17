@@ -1,0 +1,43 @@
+.hero {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+
+    .hero__content {
+      h1 {
+        font-weight: 400;
+        font-size: 3.6rem;
+        color: $primary-color;
+      }
+      p {
+        font-weight: 400;
+        font-size: 3.6rem;
+        color: $primary-color;
+        margin-top: 2.8rem;
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: $secondary-color;
+        background: $primary-color;
+        font-size: 3.2rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+
+        box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+        &:active {
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+          transform: translateY(4px);
+        }
+      }
+    }
+  }
+}
